@@ -19,7 +19,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFFF5F4), // الخلفية الوردي الفاتح
+      backgroundColor: const Color(0xFFFFF5F4),   
       body: SafeArea(
         child: Column(
           children: [
@@ -55,7 +55,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        // زر Skip
         TextButton(
           onPressed: () {
             _controller.jumpToPage(2);
@@ -66,7 +65,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           ),
         ),
 
-        // النقاط (Dots)
         Row(
           children: List.generate(
             3,
@@ -83,7 +81,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           ),
         ),
 
-        // زر Next
         TextButton(
           onPressed: () {
             _controller.nextPage(
@@ -118,7 +115,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         ),
         child: const Text(
           "Get Started",
-          // تعديل لون الخط للأبيض
           style: TextStyle(fontSize: 16, color: Colors.white),
         ),
       ),
